@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formúlario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <!--Para poder marcar a bolinha devemos colocar o mesmo nome. Exemplo abaixo (name="sexo") nisso só vai ter uma marcação. Isso serve para "radio". Mas o ID tem quer diferente para que funcione. -->
+           <legend>Sexo</legend>
+           <input type="radio" name="sexo" id="isx-mas" value="M"><label for="isx-mas"> Masculino</label> <br>
+
+           <input type="radio" name="sexo" id="isx-fem" value="F"><label for="isx-fem"> Feminino</label> 
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="es-fut" id="ies-fut"> <label for="ies-fut"> Futebol</label> <br> 
+            <input type="checkbox" name="es-bas" id="ies-bas"> <label for="ies-bas"> Basquete</label> <br>
+            <input type="checkbox" name="es-nat" id="ies-nat"><label for="ies-nat"> Natação</label>  <br>
+            <input type="checkbox" name="es-ten" id="ies-ten"> <label for="ies-ten"> Tênis</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
