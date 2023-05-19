@@ -8,8 +8,22 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php" method="get">
-        
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="i-cor"> Cor:</label>
+            <input type="color" name="color" id="i-cor">
+        </p>
+
+        <p>
+            <label for="i-nivel"> Nivel de Sastifação: </label>
+            <input type="range" name="nivel" id="i-nivel">
+        </p>
+
+        <!--Quando é controle de envio de arquivos, não pode usar o "method="get" e sim o "method="post"-->
+        <p>
+            <label for="i-foto">Foto de perfil: </label>
+            <input type="file" name="foto" id="i-foto">
+        </p>
 
         <p>
             <input type="submit" value="Enviar">
